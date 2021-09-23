@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Jumpsite</title>
+
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+
+                <div class="navigation">
+					<ul>
+						<li><a class="active" href="index.html"><em>Home</em></a></li>
+                       <!-- <li><a href="site2.html"><b>Testsite</b></a></li> -->
+                        <li><a href="https://konsoleh.your-server.de"><b>Hetzner</b></a></li>
+                        <li><a href="https://trello.com/alexanderseyringer3/boards"><b>Trello</b></a></li>
+                        <li><a href="https://moodle.htld.at"><b>Moodle - Leeb</b></a></li>
+                        <li><a href="https://outlook.live.com/owa/"><b>Unterdrücker</b></a></li>
+                        <li><a href="https://teams.microsoft.com/"><b>Unfall</b></a></li>
+                        <li><a href="https://hypate.webuntis.com/WebUntis/?school=HTL%20Dornbirn#/basic/timetable"><b>Tut wenns bock hat</b></a></li>
+                        <li><a href="https://www.speedtest.net/de"><b>Speedtest</b></a></li>
+					</ul>
+
+				</div>
+
+                <div id="Uhrzeit" class="uhrzeit" onload="showTime()"></div>
+
+
+        <script>
+            function showTime(){
+    var date = new Date();
+    var h = date.getHours();
+    var m = date.getMinutes();
+    var s = date.getSeconds();
+
+
+
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+
+    var time = h + ":" + m + ":" + s;
+    document.getElementById("Uhrzeit").innerText = time;
+    document.getElementById("Uhrzeit").textContent = time;
+
+    setTimeout(showTime, 1000);
+
+}
+
+    showTime();
+
+    n =  new Date();
+    y = n.getFullYear();
+    m = n.getMonth() + 1;
+    d = n.getDate();
+    document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+
+       </script>
+
+            <div class="überschrift">
+            <h1>JUMPSEITE - INTERN</h1>
+            </div>
+
+
+                <div class="column">
+                <h1>Herzlich Willkommen!</h1>
+                <p>QuickInfos können allgemeinen Text, eine einzelne Eigenschaft oder einen Ausdruck enthalten, der Eigenschaften verwendet.</p>
+            </div>
+
+
+
+    </body>
+</html>
